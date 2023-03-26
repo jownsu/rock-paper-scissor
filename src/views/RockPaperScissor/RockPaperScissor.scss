@@ -1,0 +1,58 @@
+@import "../../assets/sass/variables";
+
+.container{
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 50px;
+    position: relative;
+    width: $bp-desktop;
+    .header{
+        border-radius: 8px;
+        border: 3px solid hsl(217, 16%, 45%);
+        display: flex;
+        height: 152px;
+        justify-content: space-between;
+        margin: 0 auto 50px;
+        padding: 15px 30px;
+        width: 705px;
+    }
+
+    .score_board{
+        align-items: center;
+        background: #F9F9F9;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        height: 116px;
+        justify-content: center;
+        width: 152px;
+        p{
+            color: hsl(229, 64%, 46%);
+            letter-spacing: 2px;
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+        h3{
+            color: hsl(229, 25%, 31%);
+            font-size: 64px;
+        }
+    }
+
+    .rules_btn{
+        background: none;
+        border-radius: 8px;
+        border: 2px solid hsl(217, 16%, 45%);
+        bottom: 100px;
+        color: #fff;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 18px;
+        height: 40px;
+        letter-spacing: 1.25px;
+        outline: none;
+        position: absolute;
+        right: 100px;
+        text-transform: uppercase;
+        width: 130px;
+    }
+}

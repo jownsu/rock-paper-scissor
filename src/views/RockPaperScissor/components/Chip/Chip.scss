@@ -1,0 +1,53 @@
+
+.chip{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &_logo{
+        background-color: #F0F0F0;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        height: 110px;
+        object-fit: contain;
+        padding: 0px;
+        width: 110px;
+
+        &.rock{
+            background-image: url("../../../../assets/images/icon-rock.svg");
+        }
+        &.paper{
+            background-image: url("../../../../assets/images/icon-paper.svg");
+        }
+        &.scissors{
+            background-image: url("../../../../assets/images/icon-scissors.svg");
+        }
+        &.lizard{
+            background-image: url("../../../../assets/images/icon-lizard.svg");
+        }
+        &.spock{
+            background-image: url("../../../../assets/images/icon-spock.svg");
+        }
+    }
+
+    &.rock{
+        background-image: radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+    }
+    &.paper{
+        background-image: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    }
+    &.scissors{
+        background-image: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    }
+    &.lizard{
+        background-image: radial-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+    }
+    &.spock{
+        background-image: radial-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+    }
+}
