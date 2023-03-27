@@ -1,36 +1,53 @@
 
 .chip{
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    display: flex;
     align-items: center;
+    background: none;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    height: 150px;
     justify-content: center;
+    outline: none;
+    width: 150px;
 
+    &.large{
+        height: 300px;
+        width: 300px;
+    }
 
     &_logo{
-        background-color: #F0F0F0;
-        background-position: center;
-        background-repeat: no-repeat;
+        background: #17223E no-repeat center;
         border-radius: 50%;
         height: 110px;
         object-fit: contain;
         padding: 0px;
         width: 110px;
 
+        &.large{
+            height: 230px;
+            width: 230px;
+            background-size: 100px;
+        }
+
         &.rock{
+            background-color: #F0F0F0;
             background-image: url("../../../../assets/images/icon-rock.svg");
         }
         &.paper{
+            background-color: #F0F0F0;
             background-image: url("../../../../assets/images/icon-paper.svg");
         }
         &.scissors{
+            background-color: #F0F0F0;
             background-image: url("../../../../assets/images/icon-scissors.svg");
         }
         &.lizard{
+            background-color: #F0F0F0;
             background-image: url("../../../../assets/images/icon-lizard.svg");
         }
         &.spock{
+            background-color: #F0F0F0;
             background-image: url("../../../../assets/images/icon-spock.svg");
         }
     }
