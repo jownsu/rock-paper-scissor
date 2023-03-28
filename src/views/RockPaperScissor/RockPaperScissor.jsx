@@ -9,6 +9,7 @@ function RockPaperScissor() {
 
     const [showRules, setShowRules] = useState(false);
     const [playerChip, setPlayerChip] = useState(null);
+    const [score, setScore] = useState(0);
 
     return (
         <div className="container">
@@ -16,12 +17,18 @@ function RockPaperScissor() {
                 <img src={Logo} alt="logo" />
                 <div className="score_board">
                     <p>Score</p>
-                    <h3>12</h3>
+                    <h3>{score}</h3>
                 </div>
             </div>
+
             {
                 playerChip 
-                ? <CompareChip player={playerChip} />
+                ? <CompareChip 
+                    player={playerChip} 
+                    onPlayAgainClick={() => setPlayerChip(null)} 
+                    onWin={() => setScore(prevScore => prevScore + 1)}
+                    onLose={() => setScore(prevScore => prevScore - 1)}
+                />
                 : <Pentagon onChipClick={type => setPlayerChip(type)} />
             }
             

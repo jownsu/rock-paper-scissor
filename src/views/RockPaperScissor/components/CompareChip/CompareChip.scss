@@ -1,25 +1,45 @@
 
 .compare_chip{
-    margin: 75px auto 0;
-    width: 705px;
     display: flex;
     justify-content: space-between;
+    margin: 75px auto 0;
+    min-width: 705px;
+    width: fit-content;
 
-    img{
-
-    }
     h4{
-        text-align: center;
         color: #fff;
-        margin-bottom: 65px;
         font-size: 22px;
-        text-transform: uppercase;
         letter-spacing: 4px;
+        margin-bottom: 65px;
+        text-align: center;
+        text-transform: uppercase;
     }
-    .player{
 
-    }
-    .computer{
-
+    .result{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 350px;
+        h3{
+            color: #fff;
+            font-size: 54px;
+            letter-spacing: 1.25px;
+            margin-bottom: 13px;
+            text-transform: uppercase;
+        }
+        button{
+            border-radius: 10px;
+            border: none;
+            color: hsl(229, 25%, 31%);
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 18px;
+            height: 50px;
+            letter-spacing: 1.50px;
+            outline: none;
+            text-transform: uppercase;
+            width: 222px;
+        }
     }
 }
