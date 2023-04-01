@@ -1,3 +1,4 @@
+@import "../../../../assets//sass/variables";
 
 .chip{
     align-items: center;
@@ -9,25 +10,43 @@
     height: 150px;
     justify-content: center;
     outline: none;
+    padding: 20px;
     width: 150px;
+
+    @media only screen and (max-width: $bp-mobile){
+        height: 100px;
+        width: 100px;
+        padding: 10px;
+    }
 
     &.large{
         height: 300px;
+        padding: 35px;
         width: 300px;
+
+        @media only screen and (max-width: $bp-mobile){
+            height: 130px;
+            padding: 15px;
+            width: 130px;
+        }
     }
 
     &_logo{
         background: #17223E no-repeat center;
         border-radius: 50%;
-        height: 110px;
+        height: 100%;
         object-fit: contain;
         padding: 0px;
-        width: 110px;
+        width: 100%;
+        @media only screen and (max-width: $bp-mobile){
+            background-size: 45%;
+        }
 
         &.large{
-            height: 230px;
-            width: 230px;
             background-size: 100px;
+            @media only screen and (max-width: $bp-mobile){
+                background-size: 40%;
+            }
         }
 
         &.rock{

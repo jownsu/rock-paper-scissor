@@ -1,12 +1,19 @@
+@import "../../../../assets/sass/variables";
 
 .pentagon{
     background-image: url("../../../../assets/images/bg-pentagon.svg");
     background-position: center;
     background-repeat: no-repeat;
-    height: 467px;
+    background-size: cover;
+    height: 317px;
     margin: 0 auto;
     position: relative;
-    width: 475px;
+    width: 325px;
+
+    @media only screen and (max-width: $bp-mobile) {
+        height: 215px;
+        width: 230px;
+    }
 
     .chip{
         position: absolute;
@@ -14,22 +21,42 @@
     .chip:nth-of-type(1){
         left: 50%;
         right: 50%;
+        top: -20%;
         transform: translateX(-50%);
+        @media only screen and (max-width: $bp-mobile) {
+            top: -20%;
+        }
     }
     .chip:nth-of-type(2){
-        right: 0;
-        top: 25%;
+        right: -25%;
+        top: 20%;
+        @media only screen and (max-width: $bp-mobile) {
+            right: -15%;
+            top: 20%;
+        }
     }
     .chip:nth-of-type(3){
-        bottom: 0;
-        right: 60px;
+        bottom: -25%;
+        right: -5%;
+        @media only screen and (max-width: $bp-mobile) {
+            bottom: -20%;
+            right: 0;
+        }
     }
     .chip:nth-of-type(4){
-        bottom: 0;
-        left: 60px;
+        bottom: -25%;
+        left: -5%;
+        @media only screen and (max-width: $bp-mobile) {
+            bottom: -20%;
+            left: 0;
+        }
     }
     .chip:nth-of-type(5){
-        left: 0;
-        top: 25%;
+        left: -25%;
+        top: 20%;
+        @media only screen and (max-width: $bp-mobile) {
+            left: -15%;
+            top: 20%;
+        }
     }
 }

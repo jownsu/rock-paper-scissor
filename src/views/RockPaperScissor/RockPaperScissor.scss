@@ -3,18 +3,41 @@
 .container{
     height: 100vh;
     margin: 0 auto;
+    max-width: $bp-desktop;
     padding-top: 50px;
     position: relative;
-    width: $bp-desktop;
+    width: 100%;
+
+    @media only screen and (max-width: $bp-mobile){
+        padding-top: 33px;
+    }
+
     .header{
+        align-items: center;
         border-radius: 8px;
         border: 3px solid hsl(217, 16%, 45%);
         display: flex;
         height: 152px;
         justify-content: space-between;
-        margin: 0 auto 50px;
+        margin: 0 auto 110px;
+        max-width: 705px;
         padding: 15px 30px;
-        width: 705px;
+        width: 100%;
+
+        @media only screen and (max-width: $bp-mobile){
+            height: 100px;
+            margin-bottom: 138px;
+            margin-top: 0;
+            padding: 10px;
+            width: 85%;
+        }
+
+        img{
+            @media only screen and (max-width: $bp-mobile){
+                width: 53px;
+                height: 53px;
+            }
+        }
     }
 
     .score_board{
@@ -26,15 +49,28 @@
         height: 116px;
         justify-content: center;
         width: 152px;
+        @media only screen and (max-width: $bp-mobile){
+            border-radius: 4px;
+            height: 74px;
+            width: 82px;
+        }
         p{
             color: hsl(229, 64%, 46%);
             letter-spacing: 2px;
             margin-bottom: 0;
             text-transform: uppercase;
+
+            @media only screen and (max-width: $bp-mobile){
+                font-size: 12px;
+            }
         }
         h3{
             color: hsl(229, 25%, 31%);
             font-size: 64px;
+
+            @media only screen and (max-width: $bp-mobile){
+                font-size: 40px;
+            }
         }
     }
 
@@ -54,5 +90,11 @@
         right: 100px;
         text-transform: uppercase;
         width: 130px;
+        @media only screen and (max-width: $bp-mobile){
+            bottom: 50px;
+            left: 50%;
+            right: 50%;
+            transform: translateX(-50%);
+        }
     }
 }
