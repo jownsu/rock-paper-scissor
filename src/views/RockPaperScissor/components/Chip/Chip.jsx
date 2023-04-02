@@ -1,11 +1,17 @@
 import React from "react";
 import "./Chip.scss";
 
-function Chip({type = "", onClick = () => {}, large = false}) {
+function Chip(props) {
+    const {
+        type = "", 
+        onClick = () => {}, 
+        large = false,
+        winner = false
+    } = props;
     return (
         <button 
             type="button" 
-            className={`chip ${type} ${large && "large"}`}
+            className={`chip ${type} ${large && "large"} ${winner && "winner"}`}
             onClick={onClick}    
         >
             <span className={`chip_logo ${type} ${large && "large"}`}></span>

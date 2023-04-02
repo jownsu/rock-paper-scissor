@@ -58,7 +58,11 @@ function CompareChip(props) {
         <div className="compare_chip">
             <div className="player">
                 <h4>You picked</h4>
-                <Chip type={player} large />
+                <Chip 
+                    type={player} 
+                    winner={RESULT[winner] === "You Win"}
+                    large 
+                />
             </div>
 
             {
@@ -71,7 +75,11 @@ function CompareChip(props) {
   
             <div className="computer">
                 <h4>The house picked</h4>
-                <Chip type={computer} large />
+                <Chip 
+                    type={computer} 
+                    winner={RESULT[winner] === "You Lose"}
+                    large 
+                />
             </div>
         </div>
     )

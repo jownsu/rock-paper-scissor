@@ -2,6 +2,7 @@
 
 .container{
     height: 100vh;
+    min-height: 750px;
     margin: 0 auto;
     max-width: $bp-desktop;
     padding-top: 50px;
@@ -19,14 +20,13 @@
         display: flex;
         height: 152px;
         justify-content: space-between;
-        margin: 0 auto 110px;
+        margin: 0 auto;
         max-width: 705px;
         padding: 15px 30px;
         width: 100%;
 
         @media only screen and (max-width: $bp-mobile){
             height: 100px;
-            margin-bottom: 138px;
             margin-top: 0;
             padding: 10px;
             width: 85%;
